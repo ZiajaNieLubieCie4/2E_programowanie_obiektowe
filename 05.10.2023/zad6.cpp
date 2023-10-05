@@ -5,6 +5,9 @@ int main() {
    int x;
     cout << "Wprowadz rok";
     cin >> x;
+   if(x < 1582)
+         cout << "Wtedy nie wiedziano co to ten rok przestepny";
+   else
     if((x%4==0 && x%100!=0) || x%400==0)
         cout <<"W roku " << x << " luty mial 29 dni";
     else
